@@ -1,16 +1,14 @@
 package com.jica.androidbasic
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+
 import kotlin.math.PI
 import kotlin.math.sqrt
 
-class MainActivity : AppCompatActivity()
-{
-    override fun onCreate(savedInstanceState: Bundle?)
+
+
+    fun main()
     {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
 
         val squareCabin = SquareCabin(6,50.0)
 
@@ -60,7 +58,7 @@ class MainActivity : AppCompatActivity()
 
     }
 
-}
+
 
 abstract class Dwelling(private var residents: Int) {
     abstract val buildingMaterial: String
